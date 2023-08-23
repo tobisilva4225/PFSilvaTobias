@@ -1,0 +1,174 @@
+/* ******** CUSTOM PROPIETIES ************** */
+:root {
+  --first-color: rgb(242, 213, 27);
+  --first-alpha-color: rgb(242, 213, 27, 0.75);
+  --second-color: rgb(20, 25, 45);
+  --second-alpha-color: rgb(21, 64, 56, 0.75);
+  --third-color: rgb(242, 120, 12);
+  --third-alpha-color: rgb(242, 120, 12, 0.75);
+
+  --link-color: rgb(114, 162, 166);
+  --link-alpha-color: rgb(114, 162, 166, 0.75);
+
+  --bg-color: rgb(180, 191, 142);
+  --bg-alpha-color: rgb(180, 191, 142, 0.75);
+}
+/* ******** RESET STYLES ************** */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "granite";
+  src: url(/fonts/Granite-Bgvl.ttf);
+}
+
+/* ******** BOOTSTRAP STYLES ************** */
+a {
+  color: var(--link-color);
+  transition: all 0.3s ease-out;
+}
+a:hover {
+  color: var(--first-color);
+}
+.bg-dark {
+  background-color: var(--second-color) !important;
+}
+
+.dropdown-item {
+  color: var(--first-alpha-color);
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+}
+
+.dropdown-item:hover {
+  color: var(--third-alpha-color);
+}
+
+.navbar-dark {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler:hover {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28242, 213, 27, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  transition: all 0.3s ease-out;
+}
+
+.nav-item {
+  padding-left: 0.5rem;
+  transition: all 0.3s ease-out;
+}
+
+.nav-item:hover {
+  background-color: var(--first-alpha-color);
+}
+
+.nav-link {
+  color: var(--first-color);
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: var(--bs-white);
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: rgb(67, 67, 67);
+  border: var(--bs-border-width) solid black;
+  border-radius: var(--bs-border-radius);
+  max-width: 32%;
+  height: auto;
+}
+/* ******** MY STYLES ************** */
+.bg-australia,
+.bg-brasil,
+.bg-cr,
+.bg-eeuu,
+.bg-indonesia {
+  height: 120vh;
+  position: center;
+  background-size: cover;
+}
+
+.bg-australia {
+  background-image: url(/imagenes/austra.jpg);
+}
+
+.bg-brasil {
+  background-image: url(/imagenes/br-principal.jpg);
+}
+
+.bg-cr {
+  background-image: url(/imagenes/costa\ ria.jpg);
+}
+.bg-eeuu {
+  background-image: url(/imagenes/ca-principal.jpg);
+}
+
+.bg-indonesia {
+  background-image: url(/imagenes/indonesia.jpg);
+}
+
+.titulo-australia {
+  font-family: "granite";
+}
+
+.logo {
+  width: 30px;
+}
+.main {
+  background-image: url(/imagenes/pexels-pixabay-390051.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "granite";
+}
+
+.span {
+  font-family: granite;
+}
+
+.color-fondo {
+  background-color: rgb(17, 56, 70, 1);
+  background-image: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.91),
+    rgba(255, 255, 255, 0.97) 79%
+  );
+  background-image: linear-gradient(131deg, rgb(0, 0, 0), rgb(107, 107, 107));
+}
+
+.width-viajes {
+  width: 50%;
+}
+
+/* *********MEDIA QUERIES************ */
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .width-viajes {
+    width: 80%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
