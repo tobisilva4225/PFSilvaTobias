@@ -1,11 +1,13 @@
 /* ******** CUSTOM PROPIETIES ************** */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Teko&display=swap");
 :root {
-  --first-color: rgb(242, 213, 27);
-  --first-alpha-color: rgb(242, 213, 27, 0.75);
-  --second-color: rgb(20, 25, 45);
-  --second-alpha-color: rgb(21, 64, 56, 0.75);
-  --third-color: rgb(242, 120, 12);
-  --third-alpha-color: rgb(242, 120, 12, 0.75);
+  --first-color: #ffc107;
+  --first-alpha-color: #ffc107;
+
+  --second-color: #082530;
+  --second-alpha-color: #154038bf;
+  --third-color: #026873;
+  --third-alpha-color: rgba(185, 22, 22, 0.75);
 
   --link-color: rgb(114, 162, 166);
   --link-alpha-color: rgb(114, 162, 166, 0.75);
@@ -24,6 +26,23 @@ body {
 }
 
 /* ******** BOOTSTRAP STYLES ************** */
+.btn-success {
+  --bs-btn-color: #ffc107;
+  --bs-btn-bg: #082530;
+  --bs-btn-border-color: #198754;
+  --bs-btn-hover-color: #bfb195;
+  --bs-btn-hover-bg: #026873;
+  --bs-btn-hover-border-color: #146c43;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #146c43;
+  --bs-btn-active-border-color: #13653f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #198754;
+  --bs-btn-disabled-border-color: #198754;
+}
+
 a {
   color: var(--link-color);
   transition: all 0.3s ease-out;
@@ -33,6 +52,10 @@ a:hover {
 }
 .bg-dark {
   background-color: var(--second-color) !important;
+}
+.card-body {
+  background-color: var(--second-color);
+  color: var(--first-color);
 }
 
 .dropdown-item {
@@ -75,21 +98,47 @@ a:hover {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: rgb(67, 67, 67);
+  background-color: var(--second-alpha-color);
   border: var(--bs-border-width) solid black;
   border-radius: var(--bs-border-radius);
   max-width: 32%;
   height: auto;
 }
+
+.btn-primary {
+  background-color: var(--first-color);
+  border-color: black;
+  color: black;
+}
 /* ******** MY STYLES ************** */
+
 .bg-australia,
 .bg-brasil,
 .bg-cr,
 .bg-eeuu,
-.bg-indonesia {
+.bg-indonesia,
+.bg-multimedia,
+.bg-nosotros,
+.bg-contacto {
   height: 120vh;
-  position: center;
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-nosotros-div {
+  background-color: #0c1425;
+}
+
+.bg-contacto {
+  background-image: url(/imagenes/hombres-chicas-estan-surfeando.jpg);
+  height: 100%;
+}
+
+.bg-nosotros {
+  background-image: url(/imagenes/1.jpg);
+}
+.bg-multimedia {
+  background-image: url(/imagenes/41.png);
 }
 
 .bg-australia {
@@ -101,7 +150,7 @@ a:hover {
 }
 
 .bg-cr {
-  background-image: url(/imagenes/costa\ ria.jpg);
+  background-image: url(/imagenes/costa-rica-principal.jpg);
 }
 .bg-eeuu {
   background-image: url(/imagenes/ca-principal.jpg);
@@ -119,12 +168,15 @@ a:hover {
   width: 30px;
 }
 .main {
-  background-image: url(/imagenes/pexels-pixabay-390051.jpg);
+  background-image: url(/imagenes/SUNSETS.png);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "granite";
+  font-family: "Open Sans", sans-serif;
+  font-family: "Teko", sans-serif;
+  color: white;
+  font-size: 80px;
 }
 
 .span {
@@ -132,19 +184,21 @@ a:hover {
 }
 
 .color-fondo {
-  background-color: rgb(17, 56, 70, 1);
-  background-image: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.815),
-    rgb(17, 56, 70, 1) 79%
-  );
-  /* background-image: linear-gradient(131deg, rgb(0, 0, 0), rgb(107, 107, 107)); */
+  background-color: black;
+  /*  background-image: linear-gradient(360deg, #cebcbc, #082a35 99.9%); */
+  /*   background-image: linear-gradient(131deg, #ffffff, #1a5b93); */
 }
 
 .width-viajes {
   width: 50%;
 }
 
+.imagen-amigo {
+  border-radius: 100%;
+}
+.main p {
+  line-height: 0.7;
+}
 /* *********MEDIA QUERIES************ */
 
 /*  Small devices (landscape phones, 576px and up) */

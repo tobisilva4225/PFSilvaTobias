@@ -23,7 +23,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body class="bg-contacto">
     <!-- BARRA DE NAVEGACION -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
       <div class="container">
@@ -34,6 +34,7 @@
             class="logo"
           />
         </a>
+        <span class="span text-warning">Sunset</span>
         <button
           class="navbar-toggler border-0"
           type="button"
@@ -48,7 +49,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-md-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link" aria-current="page" href="index.html"
                 >Inicio</a
               >
             </li>
@@ -121,12 +122,69 @@
               <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+              <a class="nav-link active" href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- CUERPO DE PAGINA -->
+    <section class="container">
+      <h1 class="titulo-australia m-5">¡TU AVENTURA COMIENZA AQUÍ!</h1>
+      <div class="m-5 row">
+        <div class="col-md-6"></div>
+        <div
+          class="border d-flex flex-column align-items-stretch p-3 bg-dark col-md-6"
+        >
+          <select class="form-select m-2" aria-label="Default select example">
+            <option selected>Destinos</option>
+            <option value="1">Australia</option>
+            <option value="2">Brasil</option>
+            <option value="3">Costa rica</option>
+            <option value="3">Estados Unidos</option>
+            <option value="3">Indonesia</option>
+          </select>
+          <div class="input-group m-2">
+            <span class="input-group-text">Nombre y Apellido</span>
+            <input type="text" aria-label="nombre" class="form-control" />
+            <input type="text" aria-label="apellido" class="form-control" />
+          </div>
+          <form class="form-floating m-2">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInputInvalid"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInputInvalid">Email</label>
+          </form>
+          <div class="form-floating m-2">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea2">Haznos una pregunta!</label>
+          </div>
+          <div class="form-check m-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label text-white" for="flexCheckDefault">
+              Acepto recibir información por correo
+            </label>
+          </div>
+          <button type="button" class="btn btn-primary m-2 align-text-center">
+            Enviar
+          </button>
+        </div>
+      </div>
+    </section>
     <!-- INICIO PIE DE PAGINA -->
     <footer
       class="bg-dark d-flex justify-content-around p-2 align-items-center"
