@@ -130,7 +130,7 @@ a:hover {
 }
 
 .bg-contacto {
-  background-image: url(/imagenes/hombres-chicas-estan-surfeando.jpg);
+  background-image: url("/imagenes/hombres-chicas-estan-surfeando.jpg");
   height: 100%;
 }
 
