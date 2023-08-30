@@ -1,5 +1,6 @@
 /* ******** CUSTOM PROPIETIES ************** */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Teko&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 :root {
   --first-color: #ffc107;
   --first-alpha-color: #ffc107;
@@ -22,7 +23,7 @@ body {
 
 @font-face {
   font-family: "granite";
-  src: url(/fonts/Granite-Bgvl.ttf);
+  src: url(../fonts/Granite-Bgvl.ttf);
 }
 
 /* ******** BOOTSTRAP STYLES ************** */
@@ -130,34 +131,34 @@ a:hover {
 }
 
 .bg-contacto {
-  background-image: url("/imagenes/hombres-chicas-estan-surfeando.jpg");
+  background-image: url(../imagenes/hombres-chicas-estan-surfeando.jpg);
   height: 100%;
 }
 
 .bg-nosotros {
-  background-image: url(/imagenes/1.jpg);
+  background-image: url(../imagenes/1.jpg);
 }
 .bg-multimedia {
-  background-image: url(/imagenes/41.png);
+  background-image: url(../imagenes/41.png);
 }
 
 .bg-australia {
-  background-image: url(/imagenes/austra.jpg);
+  background-image: url(../imagenes/austra.jpg);
 }
 
 .bg-brasil {
-  background-image: url(/imagenes/br-principal.jpg);
+  background-image: url(../imagenes/br-principal.jpg);
 }
 
 .bg-cr {
-  background-image: url(/imagenes/costa-rica-principal.jpg);
+  background-image: url(../imagenes/costa-rica-principal.jpg);
 }
 .bg-eeuu {
-  background-image: url(/imagenes/ca-principal.jpg);
+  background-image: url(../imagenes/ca-principal.jpg);
 }
 
 .bg-indonesia {
-  background-image: url(/imagenes/indonesia.jpg);
+  background-image: url(../imagenes/indonesia.jpg);
 }
 
 .titulo-australia {
@@ -168,7 +169,7 @@ a:hover {
   width: 30px;
 }
 .main {
-  background-image: url(/imagenes/SUNSETS.png);
+  background-image: url(../imagenes/SUNSETS.png);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
