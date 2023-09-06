@@ -1,0 +1,108 @@
+/* ******** MY STYLES ************** */
+@import "./partials/fonts";
+@import "./partials/bootstrap-reset";
+@import "./partials/variables";
+
+a {
+  color: $link-color;
+  transition: all 0.3s ease-out;
+  &:hover {
+    color: rgba(0, 128, 0, 0.521);
+  }
+}
+
+.bg-australia,
+.bg-brasil,
+.bg-cr,
+.bg-eeuu,
+.bg-indonesia,
+.bg-multimedia,
+.bg-nosotros,
+.bg-contacto {
+  height: 120vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-nosotros-div {
+  background-color: #0c1425;
+}
+
+.bg-contacto {
+  background-image: url(../imagenes/hombres-chicas-estan-surfeando.jpg);
+  height: 100%;
+}
+
+.bg-nosotros {
+  background-image: url(../imagenes/1.jpg);
+}
+
+.bg-multimedia {
+  background-image: url(../imagenes/41.png);
+}
+
+.bg-australia {
+  background-image: url(../imagenes/austra.jpg);
+}
+
+.bg-brasil {
+  background-image: url(../imagenes/br-principal.jpg);
+}
+
+.bg-cr {
+  background-image: url(../imagenes/costa-rica-principal.jpg);
+}
+
+.bg-eeuu {
+  background-image: url(../imagenes/ca-principal.jpg);
+}
+
+.bg-indonesia {
+  background-image: url(../imagenes/indonesia.jpg);
+}
+
+.titulo-australia {
+  font-family: "granite";
+}
+
+.logo {
+  width: 30px;
+}
+
+.main {
+  background-image: url(../imagenes/SUNSETS.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Teko", sans-serif;
+  color: white;
+  font-size: 80px;
+}
+
+.span {
+  font-family: granite;
+}
+
+.color-fondo {
+  background-color: black;
+  /*  background-image: linear-gradient(360deg, #cebcbc, #082a35 99.9%); */
+  /*   background-image: linear-gradient(131deg, #ffffff, #1a5b93); */
+}
+
+.width-viajes {
+  width: 50%;
+}
+
+.imagen-amigo {
+  border-radius: 100%;
+}
+.main p {
+  line-height: 0.7;
+}
+
+/* *********MEDIA QUERIES************ */
+
+@import "./partials/queries";

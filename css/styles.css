@@ -1,22 +1,6 @@
 /* ******** CUSTOM PROPIETIES ************** */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Teko&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-:root {
-  --first-color: #ffc107;
-  --first-alpha-color: #ffc107;
-
-  --second-color: #082530;
-  --second-alpha-color: #154038bf;
-  --third-color: #026873;
-  --third-alpha-color: rgba(185, 22, 22, 0.75);
-
-  --link-color: rgb(114, 162, 166);
-  --link-alpha-color: rgb(114, 162, 166, 0.75);
-
-  --bg-color: rgb(180, 191, 142);
-  --bg-alpha-color: rgb(180, 191, 142, 0.75);
-}
-/* ******** RESET STYLES ************** */
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -25,8 +9,6 @@ body {
   font-family: "granite";
   src: url(../fonts/Granite-Bgvl.ttf);
 }
-
-/* ******** BOOTSTRAP STYLES ************** */
 .btn-success {
   --bs-btn-color: #ffc107;
   --bs-btn-bg: #082530;
@@ -44,35 +26,50 @@ body {
   --bs-btn-disabled-border-color: #198754;
 }
 
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: rgba(21, 64, 56, 0.7490196078);
+  border: var(--bs-border-width) solid black;
+  border-radius: var(--bs-border-radius);
+  max-width: 32%;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border-color: black;
+  color: black;
+}
+
 a {
-  color: var(--link-color);
+  color: rgb(114, 162, 166);
   transition: all 0.3s ease-out;
 }
 a:hover {
-  color: var(--first-color);
+  color: rgba(0, 128, 0, 0.521);
 }
+
 .bg-dark {
-  background-color: var(--second-color) !important;
+  background-color: #082530 !important;
 }
+
 .card-body {
-  background-color: var(--second-color);
-  color: var(--first-color);
+  background-color: #082530;
+  color: #ffc107;
 }
 
 .dropdown-item {
-  color: var(--first-alpha-color);
+  color: #ffc107;
   font-weight: bold;
   transition: all 0.3s ease-out;
 }
-
 .dropdown-item:hover {
-  color: var(--third-alpha-color);
+  color: rgba(185, 22, 22, 0.75);
 }
 
 .navbar-dark {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
 .navbar-dark .navbar-toggler:hover {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28242, 213, 27, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   transition: all 0.3s ease-out;
@@ -82,37 +79,20 @@ a:hover {
   padding-left: 0.5rem;
   transition: all 0.3s ease-out;
 }
-
 .nav-item:hover {
-  background-color: var(--first-alpha-color);
+  background-color: #ffc107;
 }
 
 .nav-link {
-  color: var(--first-color);
+  color: #ffc107;
   font-size: 1.15rem;
   font-weight: bold;
 }
-
 .nav-link:hover {
   color: var(--bs-white);
 }
 
-.img-thumbnail {
-  padding: 0.25rem;
-  background-color: var(--second-alpha-color);
-  border: var(--bs-border-width) solid black;
-  border-radius: var(--bs-border-radius);
-  max-width: 32%;
-  height: auto;
-}
-
-.btn-primary {
-  background-color: var(--first-color);
-  border-color: black;
-  color: black;
-}
 /* ******** MY STYLES ************** */
-
 .bg-australia,
 .bg-brasil,
 .bg-cr,
@@ -126,6 +106,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .bg-nosotros-div {
   background-color: #0c1425;
 }
@@ -138,6 +119,7 @@ a:hover {
 .bg-nosotros {
   background-image: url(../imagenes/1.jpg);
 }
+
 .bg-multimedia {
   background-image: url(../imagenes/41.png);
 }
@@ -153,6 +135,7 @@ a:hover {
 .bg-cr {
   background-image: url(../imagenes/costa-rica-principal.jpg);
 }
+
 .bg-eeuu {
   background-image: url(../imagenes/ca-principal.jpg);
 }
@@ -168,6 +151,7 @@ a:hover {
 .logo {
   width: 30px;
 }
+
 .main {
   background-image: url(../imagenes/SUNSETS.png);
   height: 100vh;
@@ -197,33 +181,26 @@ a:hover {
 .imagen-amigo {
   border-radius: 100%;
 }
+
 .main p {
   line-height: 0.7;
 }
-/* *********MEDIA QUERIES************ */
 
+/* *********MEDIA QUERIES************ */
 /*  Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
   .width-viajes {
     width: 80%;
   }
 }
-
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .nav-item:hover {
     background-color: transparent;
   }
 }
-
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-}
+
+/*# sourceMappingURL=styles.css.map */
