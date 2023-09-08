@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="bg-black">
@@ -131,12 +132,14 @@
     <!-- CUERPO DE PAGINA -->
     <section id="costa-rica" class="bg-cr mb-5 d-flex">
       <div
-        class="bg-white text-dark p-5 bg-opacity-25 d-flex flex-column align-items-center justify-content-start width-viajes"
+        class="bg-black p-5 bg-opacity-50 d-flex flex-column align-items-center justify-content-start width-viajes"
       >
-        <h1 class="titulo-australia text-decoration-underline mb-5 pt-5">
+        <h1
+          class="titulo-australia text-white text-decoration-underline mb-5 pt-5"
+        >
           COSTA RICA
         </h1>
-        <p class="fw-medium fst-italic">
+        <p class="fw-medium text-white fst-italic">
           Este viaje esta diseñado para todos los niveles. En conjunto con las
           mejores escuelas de surfing de Costa Rica encontraremos tu ola ideal,
           clases brindadas por profesores certificados. No importa si nunca te
@@ -145,6 +148,7 @@
           profesional certificado te acompañará en el proceso para mejorar tu
           remada, maniobras y selección de olas.
         </p>
+        <a href="contacto.html" class="btn btn-primary">¡QUIERO VIAJAR!</a>
       </div>
     </section>
     <section>
@@ -155,6 +159,7 @@
               src="imagenes/img de alta calidad/costa rica/galeria/ch1.jpg"
               alt=""
               class="w-100 mb-4 rounded"
+              data-aos="fade-up"
           /></a>
 
           <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImagecv1">
@@ -162,6 +167,7 @@
               src="imagenes/img de alta calidad/costa rica/galeria/cv1.jpg"
               alt=""
               class="w-100 mb-4 rounded"
+              data-aos="fade-up"
             />
           </a>
         </div>
@@ -171,6 +177,7 @@
               src="imagenes/img de alta calidad/costa rica/galeria/cv2.jpg"
               alt=""
               class="w-100 mb-4 rounded"
+              data-aos="fade-up"
             />
           </a>
           <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImagech2">
@@ -178,6 +185,7 @@
               src="imagenes/img de alta calidad/costa rica/galeria/ch2.jpg"
               alt=""
               class="w-100 mb-4 rounded"
+              data-aos="fade-up"
             />
           </a>
         </div>
@@ -187,6 +195,7 @@
               src="imagenes/img de alta calidad/costa rica/galeria/ch3.jpg"
               alt=""
               class="w-100 mb-4 rounded"
+              data-aos="fade-up"
             />
           </a>
           <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImagecv3">
@@ -194,6 +203,7 @@
               src="imagenes/img de alta calidad/costa rica/galeria/cv3.jpg"
               alt=""
               class="w-100 mb-4 rounded"
+              data-aos="fade-up"
             />
           </a>
         </div>
@@ -486,5 +496,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="bg-nosotros-div">
@@ -130,7 +131,11 @@
     </nav>
     <!-- CUERPO DE PAGINA -->
     <div class="bg-nosotros d-flex align-items-end justify-content-center">
-      <h1 class="titulo-australia text-white mb-5 text-center">
+      <h1
+        class="titulo-australia text-white mb-5 text-center"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
         UNA HISTORIA DE DOS LOCOS
       </h1>
     </div>
@@ -225,5 +230,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

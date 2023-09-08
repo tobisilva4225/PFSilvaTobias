@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="color-fondo">
@@ -130,99 +131,58 @@
     </nav>
     <!-- CUERPO DE PAGINA -->
     <main class="main d-flex flex-column justify-content-end align-items-start">
-      <p class="container pb-5">SUNSET <br />SURF <br />TRIP</p>
+      <p class="container pb-5" data-aos="fade-right">
+        SUNSET <br />SURF <br />TRIP
+      </p>
     </main>
-    <section class="container">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-md-6">
-          <img
-            src="imagenes/multimedia/guy-kawasaki-iij-QvyRAnM-unsplash.jpg"
-            class="w-100"
-            alt=""
-          />
-        </div>
-        <div class="col-md-6 text-start text-white">
-          "Hay viajeros que viajan con mochila. Otros con maleta. Nosotros lo
-          hacemos con la tabla de surf. Somos inseparables, como si la tabla
-          fuera una extensión de nuestro cuerpo. Viajamos para practicar nuestro
-          deporte favorito, para conectar con el mar y nuestro interior.
-          Buscamos las mejores olas por el mundo, las mejores playas, la mejor
-          compañia. Y si, LAS MEJORES EXPERIENCIAS".
-        </div>
+    <section
+      class="container d-flex align-items-center justify-content-center parrafo"
+    >
+      <div
+        class="text-center texto-principal mb-5 text-white fst-italic"
+        data-aos="fade-up"
+      >
+        "Hay viajeros que viajan con mochila. Otros con maleta. Nosotros lo
+        hacemos con la tabla de surf. Somos inseparables, como si la tabla fuera
+        una extensión de nuestro cuerpo. Viajamos para practicar nuestro deporte
+        favorito, para conectar con el mar y nuestro interior. Buscamos las
+        mejores olas por el mundo, las mejores playas, la mejor compañia. Y si,
+        LAS MEJORES EXPERIENCIAS".
       </div>
     </section>
-    <section class="container mt-5">
-      <div class="div-fotos d-none d-lg-block">
-        <img src="imagenes/4.jpg" class="img-thumbnail" alt="..." />
-        <img src="imagenes/ca-fogon1.jpg" class="img-thumbnail" alt="..." />
-        <img
-          src="imagenes/sergio-mena-ferreira-N5sC8zZUgy4-unsplash.jpg"
-          class="img-thumbnail"
-          alt="..."
-        />
-      </div>
-      <div class="div-carrusel d-lg-none">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="imagenes/4.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="imagenes/ca-fogon1.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="imagenes/sergio-mena-ferreira-N5sC8zZUgy4-unsplash.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="p-5">
-      <div class="container text-white">
-        <p class="h2 text-center">¿QUE ES SUNSET?</p>
-        <p class="text-center">
+
+    <section class="bg-sunset d-flex">
+      <div
+        class="bg-black p-5 bg-opacity-50 d-flex flex-column align-items-center justify-content-start width-viajes"
+      >
+        <h1
+          class="titulo-australia text-white text-decoration-underline mb-5 pt-5"
+        >
+          ¿QUE ES SUNSET?
+        </h1>
+        <p class="fw-medium text-white fst-italic">
           En Sunset diseñamos tu viaje perfecto, expertos en turismo con más de
           10 años de experiencia en armado de viajes grupales. Surfistas como
           estilo de vida. Buscamos la combinación de los mejores lugares del
           mundo para surfear, alojamientos premium y experiencias gastronómicas
           de primer nivel para formar un viaje mágico.
         </p>
+        <a href="contacto.html" class="btn btn-primary">¡QUIERO VIAJAR!</a>
       </div>
     </section>
-    <section class="container">
-      <p class="h2 m-5 text-white text-center">PROXIMOS VIAJES</p>
-      <div class="row">
-        <div class="col-sm-4">
+
+    <section
+      class="text-center tarjetas d-flex flex-wrap justify-content-center align-items-center"
+    >
+      <p class="h2 m-5 text-decoration-underline">PROXIMOS VIAJES</p>
+      <div
+        class="row d-flex align-items-stretch justify-content-between tarjeta"
+      >
+        <div class="col-md-4 tarj-div d-flex justify-content-center mb-5">
           <div class="card" style="width: 18rem">
             <img
               src="imagenes/costa-rica-principal.jpg"
-              class="card-img-top"
+              class="card-img-top img-tarj"
               alt="..."
             />
             <div class="card-body">
@@ -230,15 +190,15 @@
               <p class="card-text">
                 Salida 12/10/2023 Surfearemos las mejores olas durante 15 dias
               </p>
-              <a href="costa-rica.html" class="btn btn-primary">MAS INFO!</a>
+              <a href="costa-rica.html" class="btn btn-primary">¡MAS INFO!</a>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4 d-flex tarj-div justify-content-center mb-5">
           <div class="card" style="width: 18rem">
             <img
               src="imagenes/in-principal.jpg"
-              class="card-img-top"
+              class="card-img-top img-tarj"
               alt="..."
             />
             <div class="card-body">
@@ -246,15 +206,15 @@
               <p class="card-text">
                 Salida 30/11/2023 Disfrutaremos de un paraiso durante 14 dias.
               </p>
-              <a href="indonesia.html" class="btn btn-primary">MAS INFO!</a>
+              <a href="indonesia.html" class="btn btn-primary">¡MAS INFO!</a>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4 tarj-div d-flex justify-content-center mb-5">
           <div class="card" style="width: 18rem">
             <img
               src="imagenes/au-principal.jpg"
-              class="card-img-top"
+              class="card-img-top img-tarj"
               alt="..."
             />
             <div class="card-body">
@@ -262,86 +222,109 @@
               <p class="card-text">
                 Salida 10/01/2024. Tendremos la mejor aventura durante 15 dias.
               </p>
-              <a href="australia.html" class="btn btn-primary">MAS INFO!</a>
+              <a href="australia.html" class="btn btn-primary">¡MAS INFO!</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="container p-5 text-center flex-wrap">
-      <p class="h2 mb-5 text-white">INCLUYE</p>
-      <div class="">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="imagenes/vuelo.jpg" class="card-img-top" alt="vuelo" />
-              <div class="card-body">
-                <h5 class="card-title">Vuelos</h5>
-              </div>
-            </div>
+
+    <section
+      class="tarjetas d-flex flex-column align-items-center justify-content-around"
+    >
+      <p class="h2 mb-5 text-decoration-underline">INCLUYE EN EL VIAJE</p>
+      <div class="d-flex align-items-center justify-content-center flex-wrap">
+        <div class="tarj">
+          <div class="face front">
+            <img src="imagenes/vuelo.jpg" alt="" />
+            <h3>Vuelos</h3>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="imagenes/img de alta calidad/costa rica/cr-hostel3.jpg"
-                class="card-img-top"
-                alt="hotel"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Alojamiento</h5>
-              </div>
-            </div>
+          <div class="face back">
+            <h3 class="">Vuelos</h3>
+            <p>Vuelo incluido dentro del precio final.</p>
+            <a href="contacto.html" class="btn btn-primary">¡MAS INFO!</a>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="imagenes/breakfast.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Desayunos</h5>
-              </div>
-            </div>
+        </div>
+        <div class="tarj">
+          <div class="face front">
+            <img
+              src="imagenes/img de alta calidad/costa rica/cr-hostel3.jpg"
+              class=""
+              alt="hotel"
+            />
+            <h3>Alojamiento</h3>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="imagenes/guia surf.jpg"
-                class="card-img-top"
-                alt="guia"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Guias</h5>
-              </div>
-            </div>
+          <div class="face back">
+            <h3>Alojamiento</h3>
+            <p>
+              Nos quedaremos en un lugar ideal, a metros del mar con un estilo
+              juvenil, playero y de primer nivel.
+            </p>
+            <a href="contacto.html" class="btn btn-primary">¡MAS INFO!</a>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="imagenes/transporte.jpg"
-                class="card-img-top"
-                alt="transportte"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Transportes</h5>
-              </div>
-            </div>
+        </div>
+        <div class="tarj">
+          <div class="face front">
+            <img src="imagenes/breakfast.jpg" class="" alt="desayuno" />
+            <h3>Desayunos</h3>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="imagenes/surfers.jpg "
-                class="card-img-top"
-                alt="clases"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clases Personalizadas</h5>
-              </div>
-            </div>
+          <div class="face back">
+            <h3>Desayunos</h3>
+            <p>
+              Porque vamos a necesitar arrancar el día con toda la energía
+              posible, un buen desayuno es clave.
+            </p>
+            <a href="contacto.html" class="btn btn-primary">¡MAS INFO!</a>
+          </div>
+        </div>
+
+        <div class="tarj">
+          <div class="face front">
+            <img src="imagenes/guia surf.jpg" class="" alt="guia" />
+            <h3>Asesoramiento y Guias</h3>
+          </div>
+          <div class="face back">
+            <h3>Asesoramiento y Guias</h3>
+            <p>
+              Selección de playas, actividades y todo armado con experiencia.
+            </p>
+            <a href="contacto.html" class="btn btn-primary">¡MAS INFO!</a>
+          </div>
+        </div>
+        <div class="tarj">
+          <div class="face front">
+            <img src="imagenes/transporte.jpg" class="" alt="transportte" />
+            <h3>Transportes</h3>
+          </div>
+          <div class="face back">
+            <h3>Transportes</h3>
+            <p>Transportes internos de playas, aereopuertos, etc.</p>
+            <a href="contacto.html" class="btn btn-primary">¡MAS INFO!</a>
+          </div>
+        </div>
+        <div class="tarj">
+          <div class="face front">
+            <img src="imagenes/surfers.jpg " class="" alt="clases" />
+            <h3>Clases</h3>
+          </div>
+          <div class="face back">
+            <h3>Clases</h3>
+            <p>Desde principiante hasta avanzado y para todas las edades.</p>
+            <a href="contacto.html" class="btn btn-primary">¡MAS INFO!</a>
           </div>
         </div>
       </div>
+    </section>
+    <section class="texto-final tarjetas fst-italic text-center">
+      <p>
+        Iremos en busca de la mejor ola apta para tu nivel, del mejor paisaje y
+        de la arena más linda. Sunset no es solo surfar tu mejor ola, es
+        disfrutar de una experiencia rodeada de gente increible, de nuevos
+        lugares, de un fogón en la playa, una cerveza al salir de tu sesión de
+        surfing y de ver el atardecer dentro del agua. El objetivo del viaje es
+        disfrutar de cada segundo que pase, visitaremos playas y rincones que no
+        olvidaremos nunca en nuestras vidas.
+      </p>
     </section>
 
     <!-- INICIO PIE DE PAGINA -->
@@ -378,5 +361,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

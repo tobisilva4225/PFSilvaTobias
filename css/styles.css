@@ -1,4 +1,4 @@
-/* ******** CUSTOM PROPIETIES ************** */
+/* ******** MY STYLES ************** */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Teko&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 body {
@@ -9,6 +9,7 @@ body {
   font-family: "granite";
   src: url(../fonts/Granite-Bgvl.ttf);
 }
+/* ******** BOOTSTRAP RESETS ************** */
 .btn-success {
   --bs-btn-color: #ffc107;
   --bs-btn-bg: #082530;
@@ -40,13 +41,8 @@ body {
   border-color: black;
   color: black;
 }
-
-a {
-  color: rgb(114, 162, 166);
-  transition: all 0.3s ease-out;
-}
-a:hover {
-  color: rgba(0, 128, 0, 0.521);
+.btn-primary:hover {
+  background-color: rgb(114, 162, 166);
 }
 
 .bg-dark {
@@ -92,7 +88,25 @@ a:hover {
   color: var(--bs-white);
 }
 
-/* ******** MY STYLES ************** */
+.card-body {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card {
+  border: solid 1px black;
+}
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+a {
+  color: rgb(114, 162, 166);
+  transition: all 0.3s ease-out;
+}
+
 .bg-australia,
 .bg-brasil,
 .bg-cr,
@@ -100,15 +114,36 @@ a:hover {
 .bg-indonesia,
 .bg-multimedia,
 .bg-nosotros,
-.bg-contacto {
+.bg-contacto,
+.bg-sunset {
   height: 120vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.bg-sunset {
+  background-image: url(../imagenes/ca-fogon1.jpg);
+  animation: galeria 15s infinite;
+}
+
+@keyframes galeria {
+  0% {
+    background-image: url(../imagenes/ca-fogon1.jpg);
+  }
+  33% {
+    background-image: url(../imagenes/4.jpg);
+  }
+  66% {
+    background-image: url(../imagenes/sergio-mena-ferreira-N5sC8zZUgy4-unsplash.jpg);
+  }
+}
+.parrafo {
+  height: 300px;
+}
+
 .bg-nosotros-div {
-  background-color: #0c1425;
+  background-color: #000000;
 }
 
 .bg-contacto {
@@ -117,7 +152,7 @@ a:hover {
 }
 
 .bg-nosotros {
-  background-image: url(../imagenes/1.jpg);
+  background-image: url(../imagenes/Untitled.png);
 }
 
 .bg-multimedia {
@@ -146,6 +181,12 @@ a:hover {
 
 .titulo-australia {
   font-family: "granite";
+}
+
+.titulo-principal {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Teko", sans-serif;
+  font-size: 80px;
 }
 
 .logo {
@@ -184,6 +225,100 @@ a:hover {
 
 .main p {
   line-height: 0.7;
+}
+
+.descripcion {
+  height: 60vh;
+}
+
+.texto-principal {
+  letter-spacing: 1px;
+}
+
+.texto-final {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* *********** TARJETAS *********** */
+.tarjeta .tarj-div {
+  transition: all 0.5s;
+}
+.tarjeta .tarj-div:hover {
+  transform: scale(1.03);
+}
+
+.img-tarj {
+  height: 180px;
+}
+
+.tarjetas {
+  background-color: rgb(114, 162, 166);
+  height: 100%;
+  padding: 70px;
+}
+.tarjetas .tarj {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+}
+.tarjetas .tarj .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.tarjetas .tarj .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.tarjetas .tarj .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tarjetas .tarj .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.tarjetas .tarj .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.tarjetas .tarj .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  text-decoration-line: underline;
+}
+.tarjetas .tarj .back p {
+  letter-spacing: 1px;
+}
+
+.tarj:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.tarj:hover .back {
+  transform: perspective(600px) rotateY(360deg);
 }
 
 /* *********MEDIA QUERIES************ */

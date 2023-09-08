@@ -2,13 +2,11 @@
 @import "./partials/fonts";
 @import "./partials/bootstrap-reset";
 @import "./partials/variables";
+@import "./partials/animacion";
 
 a {
   color: $link-color;
   transition: all 0.3s ease-out;
-  &:hover {
-    color: rgba(0, 128, 0, 0.521);
-  }
 }
 
 .bg-australia,
@@ -18,15 +16,38 @@ a {
 .bg-indonesia,
 .bg-multimedia,
 .bg-nosotros,
-.bg-contacto {
+.bg-contacto,
+.bg-sunset {
   height: 120vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.bg-sunset {
+  background-image: url(../imagenes/ca-fogon1.jpg);
+
+  animation: galeria 15s infinite;
+}
+
+@keyframes galeria {
+  0% {
+    background-image: url(../imagenes/ca-fogon1.jpg);
+  }
+  33% {
+    background-image: url(../imagenes/4.jpg);
+  }
+  66% {
+    background-image: url(../imagenes/sergio-mena-ferreira-N5sC8zZUgy4-unsplash.jpg);
+  }
+}
+
+.parrafo {
+  height: 300px;
+}
+
 .bg-nosotros-div {
-  background-color: #0c1425;
+  background-color: #000000;
 }
 
 .bg-contacto {
@@ -35,7 +56,7 @@ a {
 }
 
 .bg-nosotros {
-  background-image: url(../imagenes/1.jpg);
+  background-image: url(../imagenes/Untitled.png);
 }
 
 .bg-multimedia {
@@ -64,6 +85,12 @@ a {
 
 .titulo-australia {
   font-family: "granite";
+}
+
+.titulo-principal {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Teko", sans-serif;
+  font-size: 80px;
 }
 
 .logo {
@@ -103,6 +130,105 @@ a {
   line-height: 0.7;
 }
 
+.descripcion {
+  height: 60vh;
+}
+
+.texto-principal {
+  letter-spacing: 1px;
+}
+
+.texto-final {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* *********** TARJETAS *********** */
+
+.tarjeta .tarj-div {
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.img-tarj {
+  height: 180px;
+}
+
+.tarjetas {
+  background-color: $link-color;
+  height: 100%;
+  padding: 70px;
+
+  .tarj {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+
+    .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+
+    .front {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      h3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.4);
+        text-align: center;
+      }
+    }
+
+    .back {
+      transform: perspective(600px) rotateY(180deg);
+      background: rgb(3, 35, 54);
+      padding: 15px;
+      color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 5px 10px #000;
+      h3 {
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+        text-decoration-line: underline;
+      }
+
+      p {
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+.tarj:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.tarj:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
 /* *********MEDIA QUERIES************ */
 
 @import "./partials/queries";
