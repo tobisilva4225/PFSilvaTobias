@@ -3,84 +3,13 @@
 @import "./partials/bootstrap-reset";
 @import "./partials/variables";
 @import "./partials/animacion";
+@import "./partials/mixins";
+@import "./partials/keyframes";
+@import "./partials/backgrounds";
 
 a {
   color: $link-color;
   transition: all 0.3s ease-out;
-}
-
-.bg-australia,
-.bg-brasil,
-.bg-cr,
-.bg-eeuu,
-.bg-indonesia,
-.bg-multimedia,
-.bg-nosotros,
-.bg-contacto,
-.bg-sunset {
-  height: 120vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.bg-sunset {
-  background-image: url(../imagenes/ca-fogon1.jpg);
-
-  animation: galeria 15s infinite;
-}
-
-@keyframes galeria {
-  0% {
-    background-image: url(../imagenes/ca-fogon1.jpg);
-  }
-  33% {
-    background-image: url(../imagenes/4.jpg);
-  }
-  66% {
-    background-image: url(../imagenes/sergio-mena-ferreira-N5sC8zZUgy4-unsplash.jpg);
-  }
-}
-
-.parrafo {
-  height: 300px;
-}
-
-.bg-nosotros-div {
-  background-color: #000000;
-}
-
-.bg-contacto {
-  background-image: url(../imagenes/hombres-chicas-estan-surfeando.jpg);
-  height: 100%;
-}
-
-.bg-nosotros {
-  background-image: url(../imagenes/Untitled.png);
-}
-
-.bg-multimedia {
-  background-image: url(../imagenes/41.png);
-}
-
-.bg-australia {
-  background-image: url(../imagenes/austra.jpg);
-}
-
-.bg-brasil {
-  background-image: url(../imagenes/br-principal.jpg);
-}
-
-.bg-cr {
-  background-image: url(../imagenes/costa-rica-principal.jpg);
-}
-
-.bg-eeuu {
-  background-image: url(../imagenes/ca-principal.jpg);
-}
-
-.bg-indonesia {
-  background-image: url(../imagenes/indonesia.jpg);
 }
 
 .titulo-australia {
@@ -95,6 +24,10 @@ a {
 
 .logo {
   width: 30px;
+}
+
+.logo2 {
+  width: 60px;
 }
 
 .main {
@@ -114,7 +47,7 @@ a {
 }
 
 .color-fondo {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   /*  background-image: linear-gradient(360deg, #cebcbc, #082a35 99.9%); */
   /*   background-image: linear-gradient(131deg, #ffffff, #1a5b93); */
 }

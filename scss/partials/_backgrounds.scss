@@ -1,0 +1,150 @@
+@import "../partials/mixins";
+@import "../partials/keyframes";
+
+.bg-australia,
+.bg-brasil,
+.bg-cr,
+.bg-eeuu,
+.bg-indonesia,
+.bg-multimedia,
+.bg-nosotros,
+.bg-contacto,
+.bg-sunset {
+  @include background;
+}
+
+.bg-sunset {
+  background-image: url(../imagenes/ca-fogon1.jpg);
+  animation: galeria 15s infinite;
+}
+
+.australia-uno {
+  background-image: url(../imagenes/auh1.jpg);
+  animation: australia1 15s infinite;
+  @include background2;
+}
+
+.australia-dos {
+  background-image: url(../imagenes/aus1.jpeg);
+  animation: australia2 15s infinite;
+  @include background2;
+}
+
+.australia-tres {
+  background-image: url(../imagenes/auac1.jpg);
+  animation: australia3 15s infinite;
+  @include background2;
+}
+
+.brasil-uno {
+  background-image: url(../imagenes/brh1.jpg);
+  animation: brasil1 15s infinite;
+  @include background2;
+}
+
+.brasil-dos {
+  background-image: url(../imagenes/brs1.jpg);
+  animation: brasil2 15s infinite;
+  @include background2;
+}
+
+.brasil-tres {
+  background-image: url(../imagenes/brac1.jpg);
+  animation: brasil3 15s infinite;
+  @include background2;
+}
+
+.costa-rica-uno {
+  background-image: url(../imagenes/crh1.jpg);
+  animation: costarica1 15s infinite;
+  @include background2;
+}
+
+.costa-rica-dos {
+  background-image: url(../imagenes/crs1.jpg);
+  animation: costarica2 15s infinite;
+  @include background2;
+}
+
+.costa-rica-tres {
+  background-image: url(../imagenes/crac1.jpg);
+  animation: costarica3 15s infinite;
+  @include background2;
+}
+
+.eeuu-uno {
+  background-image: url(../imagenes/euh1.jpg);
+  animation: eu1 15s infinite;
+  @include background2;
+}
+
+.eeuu-dos {
+  background-image: url(../imagenes/eus1.jpg);
+  animation: eu2 15s infinite;
+  @include background2;
+}
+
+.eeuu-tres {
+  background-image: url(../imagenes/euac1.jpg);
+  animation: eu3 15s infinite;
+  @include background2;
+}
+
+.indonesia-uno {
+  background-image: url(../imagenes/euh1.jpg);
+  animation: in1 15s infinite;
+  @include background2;
+}
+
+.indonesia-dos {
+  background-image: url(../imagenes/eus1.jpg);
+  animation: in2 15s infinite;
+  @include background2;
+}
+
+.indonesia-tres {
+  background-image: url(../imagenes/euac1.jpg);
+  animation: in3 15s infinite;
+  @include background2;
+}
+
+.parrafo {
+  height: 300px;
+}
+
+.bg-nosotros-div {
+  background-color: #000000;
+}
+
+.bg-contacto {
+  background-image: url(../imagenes/hombres-chicas-estan-surfeando.jpg);
+  height: 140vh;
+}
+
+.bg-nosotros {
+  background-image: url(../imagenes/Untitled.png);
+}
+
+.bg-multimedia {
+  background-image: url(../imagenes/41.png);
+}
+
+.bg-australia {
+  background-image: url(../imagenes/austra.jpg);
+}
+
+.bg-brasil {
+  background-image: url(../imagenes/br-principal.jpg);
+}
+
+.bg-cr {
+  background-image: url(../imagenes/costa-rica-principal.jpg);
+}
+
+.bg-eeuu {
+  background-image: url(../imagenes/ca-principal.jpg);
+}
+
+.bg-indonesia {
+  background-image: url(../imagenes/indonesia.jpg);
+}
